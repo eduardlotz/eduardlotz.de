@@ -1,6 +1,7 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
 import './App.css';
+import Scribble from "../public/scribble.svg";
 
 function App() {
   const [date, setDate] = useState(null);
@@ -15,6 +16,7 @@ function App() {
   return (
     <div className="d-flex align-items-center justify-content-center main-bg">
       <h1 className="main-header">soon.</h1>
+      <Scribble />
     </div>
   );
 }
