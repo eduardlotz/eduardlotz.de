@@ -14,17 +14,35 @@ code {
 .main-bg {
   width: 100%;
   height: 100vh;
+  background-color: #ffffff;
+  background-image: -webkit-linear-gradient(213deg, #ffffff 0%, #f0f0f0 46%, #f2f2f2 100%);
+  background-image: -moz-linear-gradient(213deg, #ffffff 0%, #f0f0f0 46%, #f2f2f2 100%);
+  background-image: -o-linear-gradient(213deg, #ffffff 0%, #f0f0f0 46%, #f2f2f2 100%);
+  background-image: linear-gradient(213deg, #ffffff 0%, #f0f0f0 46%, #f2f2f2 100%);
+  -webkit-animation: smooth-gradient 30s ease infinite;
+  -moz-animation: smooth-gradient 30s ease infinite;
+  animation: smooth-gradient 30s ease infinite;
 }
 .main-header {
   font-size: 80px;
   color: black;
-  font-weight: 900;
+  font-weight: 800;
   letter-spacing: 0.8px;
 }
 
-.logo {
-  letter-spacing: 1.8px;
-  font-size: 32px;
-  font-weight: bold;
-  margin-top: 56px;;
+
+@-webkit-keyframes smooth-gradient {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes smooth-gradient {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes smooth-gradient {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
 }
