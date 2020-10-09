@@ -13,8 +13,8 @@ function App() {
     getDate();
   }, []);
   return (
-    <div className="d-flex" style={{width: "100vh", height: "100vh"}}>
-      <h1>soon.</h1>
+    <div className="d-flex align-items-center justify-content-center main-bg">
+      <h1 className="main-header">soon.</h1>
     </div>
   );
 }
