@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Manrope", sans-serif;
+  font-family: "Syne", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -16,7 +16,15 @@ code {
   height: 100vh;
 }
 .main-header {
-  font-size: 56px;
+  font-size: 80px;
   color: black;
+  font-weight: 900;
+  letter-spacing: 0.8px;
+}
+
+.logo {
+  letter-spacing: 1.8px;
+  font-size: 32px;
   font-weight: bold;
+  margin-top: 56px;;
 }
