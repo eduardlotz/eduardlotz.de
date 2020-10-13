@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Syne", sans-serif;
+  font-family: "Manrope", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -15,19 +15,18 @@ code {
   width: 100%;
   height: 100vh;
   background-color: #ffffff;
-  background-image: -webkit-linear-gradient(213deg, #ffffff 0%, #f0f0f0 46%, #f2f2f2 100%);
-  background-image: -moz-linear-gradient(213deg, #ffffff 0%, #f0f0f0 46%, #f2f2f2 100%);
-  background-image: -o-linear-gradient(213deg, #ffffff 0%, #f0f0f0 46%, #f2f2f2 100%);
-  background-image: linear-gradient(213deg, #ffffff 0%, #f0f0f0 46%, #f2f2f2 100%);
-  -webkit-animation: smooth-gradient 30s ease infinite;
-  -moz-animation: smooth-gradient 30s ease infinite;
-  animation: smooth-gradient 30s ease infinite;
-}
+  padding: 0 15%;
+} 
 .main-header {
-  font-size: 80px;
-  color: black;
+  color: #000000;
+  font-family: Manrope;
+  font-size: 56px;
+  font-style: normal;
   font-weight: 800;
-  letter-spacing: 0.8px;
+  line-height: 76px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 0;
 }
 
 
