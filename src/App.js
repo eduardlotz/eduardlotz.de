@@ -8,6 +8,7 @@ import reduxIcon from "./reduxlogo.svg";
 import figmaIcon from "./figmaicon.svg";
 import sassIcon from "./sassicon.svg";
 import sketchIcon from "./sketchicon.svg";
+import portrait from "./portrait.png";
 
 function App() {
   const [date, setDate] = useState(null);
@@ -44,7 +45,7 @@ function App() {
                   <a
                     href="https://www.cornerstoneondemand.com/"
                     target="_blank"
-                  >
+                    >
                     @Cornerstone
                   </a>{" "}
                   (formerly Lumesse)
@@ -57,7 +58,10 @@ function App() {
                 </p>
               </div>
             </div>
-            <div className="d-flex flex-column align-self-start h-100 w-50 img-container">
+            <div className="d-flex flex-column align-self-start h-100 w-50">
+                    <img src={portrait} width={337} height={328} className="align-self-end justify-self-end"/>
+
+                    {/**           
               <img
                 className="align-self-end"
                 src={websiteBuildingImage}
@@ -68,6 +72,8 @@ function App() {
                 src={webdesignBuildingImage}
                 alt="screenshot personal page"
               />
+              
+            **/}
             </div>
           </div>
         </div>

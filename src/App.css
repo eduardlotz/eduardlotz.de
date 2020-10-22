@@ -27,7 +27,7 @@ section {
    background: linear-gradient(180deg, rgba(237, 237, 237, 0) 0%, #EDEDED 13.54%, #EDEDED 50%, #EDEDED 85.42%, rgba(237, 237, 237, 0) 100%);
    position: absolute;
    top: 0;
-   left: 15%;
+   left: 20%;
  }
  
  .v-divider-right{
@@ -36,7 +36,7 @@ section {
    background: linear-gradient(180deg, rgba(237, 237, 237, 0) 0%, #EDEDED 13.54%, #EDEDED 50%, #EDEDED 85.42%, rgba(237, 237, 237, 0) 100%);
    position: absolute;
    top: 0;
-   right: 15%;
+   right: 20%;
 
  }
 
@@ -72,7 +72,7 @@ margin-bottom: 40px;
   width: 100%;
     height: 100vh;
   background-color: #ffffff;
-  padding: 0 15%;
+  padding: 0 20%;
 } 
 .main-header {
    color: #000000;
