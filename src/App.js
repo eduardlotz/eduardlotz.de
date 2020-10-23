@@ -1,37 +1,21 @@
 import React from "react";
-import { useEffect, useState } from "react";
 import "./App.css";
-import websiteBuildingImage from "./websiteBuild.svg";
-import webdesignBuildingImage from "./webdesignBuild.svg";
-import reactIcon from "./reactlogo.svg";
-import reduxIcon from "./reduxlogo.svg";
-import figmaIcon from "./figmaicon.svg";
-import sassIcon from "./sassicon.svg";
-import sketchIcon from "./sketchicon.svg";
 import portrait from "./portrait.png";
 import dribbbleIcon from "./dribbble.svg";
 import linkedinIcon from "./linkedin.svg";
+import previewImage from "./preview.jpg";
 
 function App() {
-  const [date, setDate] = useState(null);
-  useEffect(() => {
-    async function getDate() {
-      const res = await fetch("/api/date");
-      const newDate = await res.text();
-      setDate(newDate);
-    }
-    getDate();
-  }, []);
   return (
     <>
       <nav className="navbar d-flex flex-column align-items-center justify-content-center">
         <span className="logo-name">Eduard Lotz</span>
         <span className="logo-sub">front-end {"&"} ui / ux design</span>
-        <span className="h-divider"></span>
+        {/* <span className="h-divider"></span> */}
       </nav>
 
-      <span className="v-divider-left"></span>
-      <span className="v-divider-right"></span>
+      {/* <span className="v-divider-left"></span> */}
+      {/* <span className="v-divider-right"></span> */}
 
       <div className="main-bg">
         <div className="d-flex flex-column">
@@ -87,7 +71,7 @@ function App() {
             **/}
             </div>
           </div>
-        <span className="h-divider m-0"></span>
+        {/* <span className="h-divider m-0"></span> */}
         </div>
 
         {/** 
@@ -142,6 +126,11 @@ function App() {
           </div>
         </section>
 */}
+
+      <section className="d-flex flex-column">
+      <h2 className="align-self-start">What i'm currently working on</h2>
+      <a href="https://dribbble.com/shots/14379534-Personal-Site-Portfolio" target="_blank"><img src={previewImage} className="w-100 mt-2 stroke-image"/></a>
+      </section>
       </div>
     </>
   );

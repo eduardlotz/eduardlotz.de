@@ -138,7 +138,7 @@ h2 {
 font-family: Manrope;
 font-size: 48px;
 font-style: normal;
-font-weight: 800;
+font-weight: 700;
 line-height: 66px;
 letter-spacing: 0em;
 text-align: left;
@@ -182,7 +182,17 @@ color: #383838;
 height:276px;
 }
 
+.stroke-image {
+  border: 2px solid #000000;
+}
+
 @media only screen and (max-width: 600px) {
+  .h-divider{
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(237, 237, 237, 0) 0%, #EDEDED 13.54%, #EDEDED 50%, #EDEDED 85.42%, rgba(237, 237, 237, 0) 100%);
+  }
+
    .v-divider-left{
      width: 1px;
      height: 100%;
@@ -285,5 +295,16 @@ height:276px;
   .portrait-image {
     width: 100%;
     height: 100%;
+  }
+
+  h2 {
+    font-family: Manrope;
+font-size: 30px;
+font-style: normal;
+font-weight: 700;
+line-height: 40px;
+letter-spacing: 0em;
+text-align: left;
+color: #000000;
   }
 }
