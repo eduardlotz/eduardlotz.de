@@ -36,7 +36,7 @@ function App() {
       <div className="main-bg">
         <div className="d-flex flex-column">
           <div className="d-flex flex-md-row flex-column align-items-start justify-content-center section-header">
-            <div className="d-flex flex-column align-self-start h-100 w-50">
+            <div className="d-flex flex-column align-self-start h-100 header-text">
               <div className="d-flex flex-column align-items-start justify-content-center">
                 <h1 className="main-header">Hey </h1>
                 <h1 className="main-header">I'm Eddie!</h1>
@@ -60,18 +60,16 @@ function App() {
                 </p>
                 <p>Unfortunately still working on this website</p>
 
-                <div className="d-flex social-links">
-                  <a className="mr-3" href="https://dribbble.com/eddiedesign" target="_blank"><img src={dribbbleIcon}/></a>
-                  <a href="https://www.linkedin.com/in/eduardlotz/" target="_blank"><img src={linkedinIcon}/></a>
+                <div className="d-flex align-items-end social-links">
+                  <a className="mr-3" href="https://www.linkedin.com/in/eduardlotz/" target="_blank"><img src={linkedinIcon}/></a>
+                  <a  href="https://dribbble.com/eddiedesign" target="_blank"><img src={dribbbleIcon}/></a>
                 </div>
               </div>
             </div>
-            <div className="d-flex flex-column align-self-start h-100 w-50">
+            <div className="d-flex flex-column align-self-end h-100 align-items-end justify-content-end header-image">
               <img
                 src={portrait}
-                width={337}
-                height={328}
-                className="align-self-end justify-self-end"
+                className="portrait-image align-self-end justify-self-end"
               />
 
               {/**           

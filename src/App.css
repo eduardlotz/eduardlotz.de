@@ -41,7 +41,7 @@ section {
  }
 
 .section-header {
-  padding-top: 80px;
+  padding-top: 40px;
 }
 
 .logo-name {
@@ -73,7 +73,15 @@ margin-bottom: 40px;
     height: 100%;
   background-color: #ffffff;
   padding: 0 20%;
-} 
+}
+
+
+.header-text, .header-image {
+  width: 50%;
+}
+
+
+
 .main-header {
    color: #000000;
   font-family: Manrope;
@@ -167,4 +175,111 @@ color: #383838;
 
 .social-links a:hover svg {
   color: #dedede;
+}
+
+.portrait-image {
+  width:336px;
+height:276px;
+}
+
+@media only screen and (max-width: 60 0px) {
+   .v-divider-left{
+     width: 1px;
+     height: 100%;
+     background: linear-gradient(180deg, rgba(237, 237, 237, 0) 0%, #EDEDED 13.54%, #EDEDED 50%, #EDEDED 85.42%, rgba(237, 237, 237, 0) 100%);
+     position: absolute;
+     top: 0;
+     left: 10%;
+   }
+   
+   .v-divider-right{
+     width: 1px;
+     height: 100%;
+     background: linear-gradient(180deg, rgba(237, 237, 237, 0) 0%, #EDEDED 13.54%, #EDEDED 50%, #EDEDED 85.42%, rgba(237, 237, 237, 0) 100%);
+     position: absolute;
+     top: 0;
+     right: 10%;
+  
+   }
+  
+  .section-header {
+    padding-top: 40px;
+  }
+  
+  .logo-name {
+    font-family: Manrope;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 55px;
+  letter-spacing: 0;
+  text-align: center;
+  color: #000000;
+  }
+  
+  .logo-sub {
+    font-family: Manrope;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: 1.6px;
+  text-align: left;
+  color: #9D9D9D;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  }
+  
+  .main-bg {
+    width: 100%;
+      height: 100%;
+    background-color: #ffffff;
+    padding: 0 10%;
+  } 
+  .main-header {
+     color: #000000;
+    font-family: Manrope;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 56px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0;
+  }
+  
+  .subheader {
+    margin-top: 16px;
+  }
+  
+  .subheader p {
+    font-family: Manrope;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+  }
+  
+  a {
+    color: #2493B6;
+    text-decoration: none;
+    
+  }
+  
+  a:hover {
+    text-decoration: none;
+    border: none;
+  }
+  
+  a:visited {
+    color: #2493B6;
+    text-decoration: none;
+  }
+  
+  .portrait-image {
+    width: 100%;
+    height: 100%;
+  }
 }
