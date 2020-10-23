@@ -9,6 +9,8 @@ import figmaIcon from "./figmaicon.svg";
 import sassIcon from "./sassicon.svg";
 import sketchIcon from "./sketchicon.svg";
 import portrait from "./portrait.png";
+import dribbbleIcon from "./dribbble.svg";
+import linkedinIcon from "./linkedin.svg";
 
 function App() {
   const [date, setDate] = useState(null);
@@ -57,6 +59,11 @@ function App() {
                   </a>
                 </p>
                 <p>Unfortunately still working on this website</p>
+
+                <div className="d-flex social-links">
+                  <a className="mr-3" href="https://dribbble.com/eddiedesign" target="_blank"><img src={dribbbleIcon}/></a>
+                  <a href="https://www.linkedin.com/in/eduardlotz/" target="_blank"><img src={linkedinIcon}/></a>
+                </div>
               </div>
             </div>
             <div className="d-flex flex-column align-self-start h-100 w-50">

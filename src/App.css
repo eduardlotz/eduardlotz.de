@@ -160,3 +160,11 @@ color: #383838;
 .skills-row.low .col-3 {
   padding: 0;
 }
+
+.social-links a svg{
+  color: #000000;
+}
+
+.social-links a:hover svg {
+  color: #dedede;
+}
