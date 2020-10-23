@@ -33,35 +33,41 @@ function App() {
 
       <div className="main-bg">
         <div className="d-flex flex-column">
-          <div className="d-flex align-items-start justify-content-center section-header">
+          <div className="d-flex flex-md-row flex-column align-items-start justify-content-center section-header">
             <div className="d-flex flex-column align-self-start h-100 w-50">
               <div className="d-flex flex-column align-items-start justify-content-center">
-                <h1 className="main-header">Hey 👋</h1>
+                <h1 className="main-header">Hey </h1>
                 <h1 className="main-header">I'm Eddie!</h1>
               </div>
               <div className="d-flex flex-column align-items-start justify-content-center subheader">
-                <p className="">
+                <p>
                   Software Developer Apprentice{" "}
                   <a
                     href="https://www.cornerstoneondemand.com/"
                     target="_blank"
-                    >
+                  >
                     @Cornerstone
                   </a>{" "}
                   (formerly Lumesse)
                 </p>
-                <p className="">
+                <p>
                   Freelance UI / UX Designer{" "}
                   <a href="https://www.whitespace.cc/" target="_blank">
                     @whitespace_
                   </a>
                 </p>
+                <p>Unfortunately still working on this website</p>
               </div>
             </div>
             <div className="d-flex flex-column align-self-start h-100 w-50">
-                    <img src={portrait} width={337} height={328} className="align-self-end justify-self-end"/>
+              <img
+                src={portrait}
+                width={337}
+                height={328}
+                className="align-self-end justify-self-end"
+              />
 
-                    {/**           
+              {/**           
               <img
                 className="align-self-end"
                 src={websiteBuildingImage}
@@ -76,8 +82,10 @@ function App() {
             **/}
             </div>
           </div>
+        <span className="h-divider m-0"></span>
         </div>
 
+        {/** 
         <section className="d-flex flex-column">
           <h2>Skills</h2>
           <div className="d-flex skills-row">
@@ -109,7 +117,7 @@ function App() {
               </div>
             </div>
           </div>
-
+ 
           <div className="d-flex skills-row low">
             <div className="col-3">
               <div className="d-flex flex-column align-self-start justify-content-start">
@@ -128,6 +136,7 @@ function App() {
             </div>
           </div>
         </section>
+*/}
       </div>
     </>
   );
