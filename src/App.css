@@ -182,7 +182,7 @@ color: #383838;
 height:276px;
 }
 
-@media only screen and (max-width: 60 0px) {
+@media only screen and (max-width: 600px) {
    .v-divider-left{
      width: 1px;
      height: 100%;
@@ -246,6 +246,10 @@ height:276px;
     letter-spacing: 0em;
     text-align: left;
     margin: 0;
+  }
+
+  .header-text, .header-image {
+    width: 100%;
   }
   
   .subheader {
