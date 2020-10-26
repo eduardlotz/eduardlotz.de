@@ -46,7 +46,7 @@ function App() {
 
                 <div className="d-flex align-items-end social-links">
                   <a className="mr-3" href="https://www.linkedin.com/in/eduardlotz/" target="_blank"><img src={linkedinIcon}/></a>
-                  <a  href="https://dribbble.com/eddiedesign" target="_blank"><img src={dribbbleIcon}/></a>
+                  <a  href="https://dribbble.com/eduardlotz" target="_blank"><img src={dribbbleIcon}/></a>
                 </div>
               </div>
             </div>
