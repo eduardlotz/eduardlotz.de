@@ -53,7 +53,7 @@ function App() {
             <div className="d-flex flex-column align-self-end h-100 align-items-end justify-content-end header-image">
               <img
                 src={portrait}
-                className="portrait-image align-self-end justify-self-end anim-slide-up delay-2"
+                className="portrait-image align-self-end justify-self-end anim-slide-up delay-5"
               />
 
               {/**           
