@@ -22,11 +22,11 @@ function App() {
           <div className="d-flex flex-md-row flex-column align-items-start justify-content-center section-header">
             <div className="d-flex flex-column align-self-start h-100 header-text">
               <div className="d-flex flex-column align-items-start justify-content-center">
-                <h1 className="main-header">Hey </h1>
-                <h1 className="main-header">I'm Eddie!</h1>
+                <h1 className="main-header anim-slide-up">Hey </h1>
+                <h1 className="main-header anim-slide-up delay-2">I'm Eddie!</h1>
               </div>
               <div className="d-flex flex-column align-items-start justify-content-center subheader">
-                <p>
+                <p className="anim-slide-up delay-4">
                   Software Developer Apprentice{" "}
                   <a
                     href="https://www.cornerstoneondemand.com/"
@@ -36,24 +36,24 @@ function App() {
                   </a>{" "}
                   (formerly Lumesse)
                 </p>
-                <p>
+                <p className="anim-slide-up delay-5">
                   Freelance UI / UX Designer{" "}
                   <a href="https://www.whitespace.cc/" target="_blank">
                     @whitespace_
                   </a>
                 </p>
-                <p>Unfortunately still working on this website</p>
+                <p className="anim-slide-up delay-6">Unfortunately still working on this website</p>
 
-                <div className="d-flex align-items-end social-links">
+                <div className="d-flex align-items-end social-links anim-slide-up delay-6">
                   <a className="mr-3" href="https://www.linkedin.com/in/eduardlotz/" target="_blank"><img src={linkedinIcon}/></a>
-                  <a  href="https://dribbble.com/eduardlotz" target="_blank"><img src={dribbbleIcon}/></a>
+                  <a  href="https://dribbble.com/eduardlotz " target="_blank"><img src={dribbbleIcon}/></a>
                 </div>
               </div>
             </div>
             <div className="d-flex flex-column align-self-end h-100 align-items-end justify-content-end header-image">
               <img
                 src={portrait}
-                className="portrait-image align-self-end justify-self-end"
+                className="portrait-image align-self-end justify-self-end anim-slide-up delay-2"
               />
 
               {/**           
@@ -128,8 +128,8 @@ function App() {
 */}
 
       <section className="d-flex flex-column">
-      <h2 className="align-self-start">What i'm currently working on</h2>
-      <a href="https://dribbble.com/shots/14379534-Personal-Site-Portfolio" target="_blank"><img src={previewImage} className="w-100 mt-2 stroke-image"/></a>
+      <h2 className="align-self-start anim-slide-up delay-10">What i'm currently working on</h2>
+      <a className="anim-slide-up delay-16" href="https://dribbble.com/shots/14379534-Personal-Site-Portfolio" target="_blank"><img src={previewImage} className="w-100 mt-2 stroke-image"/></a>
       </section>
       </div>
     </>

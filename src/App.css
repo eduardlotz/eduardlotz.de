@@ -1,3 +1,50 @@
+@keyframes slide-up {
+  0% {
+    transform: translateY(16px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.anim-slide-up {
+  opacity: 0;
+  animation: slide-up 1.5s cubic-bezier(.8,0,0,0.8);
+  animation-fill-mode: forwards;
+}
+
+.delay-1 {
+  animation-delay: .1s;
+}
+
+.delay-2 {
+  animation-delay: .2s;
+}
+
+.delay-3 {
+  animation-delay: .3s;
+}
+.delay-4 {
+  animation-delay: .4s;
+}
+.delay-5 {
+  animation-delay: .5s;
+}
+.delay-6 {
+  animation-delay: .6s;
+}
+
+.delay-10 {
+  animation-delay: 1s;
+}
+
+.delay-16 {
+  animation-delay: 1.6s;
+}
+
 body {
   margin: 0;
   padding: 0;
