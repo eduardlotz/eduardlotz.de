@@ -42,7 +42,6 @@ function App() {
                     @whitespace_
                   </a>
                 </p>
-                <p className="anim-slide-up delay-6">Unfortunately still working on this website</p>
 
                 <div className="d-flex align-items-end social-links anim-slide-up delay-6">
                   <a className="mr-3" href="https://www.linkedin.com/in/eduardlotz/" target="_blank"><img src={linkedinIcon}/></a>
