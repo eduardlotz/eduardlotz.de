@@ -1,0 +1,294 @@
+@import "./stylesheets/animations";
+@import "./stylesheets/typography";
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Manrope", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+section {
+  margin: 64px 0;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.section-header {
+  padding-top: 40px;
+}
+
+.logo {
+  &-name {
+    font-family: Manrope;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 55px;
+    letter-spacing: 0;
+    text-align: center;
+    color: #000000;
+  }
+
+  &-sub {
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 1.6px;
+    text-align: left;
+    color: #9d9d9d;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
+}
+
+.main-bg {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  padding: 0 20%;
+}
+
+.header-text {
+  .header-image {
+    width: 50%;
+  }
+}
+
+.main-header {
+  color: #000000;
+  font-family: Manrope;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 76px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 0;
+}
+
+.subheader {
+  margin-top: 16px;
+
+  p {
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+}
+
+a {
+  color: #2493b6;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+    border: none;
+  }
+
+  &:visited {
+    color: #2493b6;
+    text-decoration: none;
+  }
+}
+
+.img-container {
+  img:first-child {
+    width: 220px;
+    height: 172px;
+  }
+
+  img:last-child {
+    width: 218px;
+    height: 171px;
+  }
+}
+
+.skills-row {
+  span {
+    margin-top: 16px;
+    font-family: Manrope;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #383838;
+  }
+
+  &.col {
+    padding: 0;
+  }
+
+  &.low {
+    margin-top: 80px;
+  }
+
+  &.low .col-3 {
+    padding: 0;
+  }
+}
+
+.social-links {
+  a svg {
+    color: #000000;
+  }
+
+  a:hover svg {
+    color: #dedede;
+  }
+}
+
+.portrait-image {
+  width: auto;
+  height: 100%;
+}
+
+.stroke-image {
+  border: 4px solid #000000;
+  border-radius: 12px;
+}
+
+@media only screen and (max-width: 600px) {
+  .h-divider {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      rgba(237, 237, 237, 0) 0%,
+      #ededed 13.54%,
+      #ededed 50%,
+      #ededed 85.42%,
+      rgba(237, 237, 237, 0) 100%
+    );
+  }
+
+  .v-divider-left {
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(
+      180deg,
+      rgba(237, 237, 237, 0) 0%,
+      #ededed 13.54%,
+      #ededed 50%,
+      #ededed 85.42%,
+      rgba(237, 237, 237, 0) 100%
+    );
+    position: absolute;
+    top: 0;
+    left: 10%;
+  }
+
+  .v-divider-right {
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(
+      180deg,
+      rgba(237, 237, 237, 0) 0%,
+      #ededed 13.54%,
+      #ededed 50%,
+      #ededed 85.42%,
+      rgba(237, 237, 237, 0) 100%
+    );
+    position: absolute;
+    top: 0;
+    right: 10%;
+  }
+
+  .section-header {
+    padding-top: 40px;
+  }
+
+  .logo-name {
+    font-family: Manrope;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 55px;
+    letter-spacing: 0;
+    text-align: center;
+    color: #000000;
+  }
+
+  .logo-sub {
+    font-family: Manrope;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 1.6px;
+    text-align: left;
+    color: #9d9d9d;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
+
+  .main-bg {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    padding: 0 10%;
+  }
+  
+
+  .header-text,
+  .header-image {
+    width: 100%;
+  }
+
+  .subheader {
+    margin-top: 16px;
+  }
+
+  .subheader p {
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  a {
+    color: #2493b6;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: none;
+    border: none;
+  }
+
+  a:visited {
+    color: #2493b6;
+    text-decoration: none;
+  }
+
+  .portrait-image {
+    width: 100%;
+    height: 100%;
+  }
+
+  h2 {
+    font-family: Manrope;
+    font-size: 30px;
+    font-style: bold;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000000;
+  }
+}
