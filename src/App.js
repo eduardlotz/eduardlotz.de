@@ -6,7 +6,7 @@ import "./App.css";
 import portrait from "./assets/portrait.png";
 import dribbbleIcon from "./assets/dribbble.svg";
 import linkedinIcon from "./assets/linkedin.svg";
-import previewImage from "./assets/mindrapp_dribbble.jpg";
+import previewImage from "./assets/mindr-lobby-dribbble.jpg";
 import reactIcon from "./assets/reactlogo.svg";
 import reduxIcon from "./assets/reduxlogo.svg";
 import figmaIcon from "./assets/figmaicon.svg";
