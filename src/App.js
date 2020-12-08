@@ -6,13 +6,15 @@ import "./App.css";
 import portrait from "./assets/portrait.png";
 import dribbbleIcon from "./assets/dribbble.svg";
 import linkedinIcon from "./assets/linkedin.svg";
-import previewImage from "./assets/mindr-new-home.jpg";
+import previewImage from "./assets/mindr-reveal-shot.jpg";
 import reactIcon from "./assets/reactlogo.svg";
 import reduxIcon from "./assets/reduxlogo.svg";
 import figmaIcon from "./assets/figmaicon.svg";
 import sketchIcon from "./assets/sketchicon.svg";
 import sassIcon from "./assets/sassicon.svg";
 import SkillBlock from "./components/SkillBlock";
+
+const imageLink = "https://dribbble.com/shots/14723798-mindr-online-party-game-components";
 
 function App() {
   return (
@@ -83,7 +85,7 @@ function App() {
 
 <section className="d-flex flex-column">
       <h2 className="align-self-start anim-slide-up delay-10">What i'm currently working on</h2>
-      <a className="anim-slide-up delay-16" href="https://dribbble.com/shots/14672823-mindr-online-party-game" target="_blank"><img src={previewImage} className="w-100 mt-2 stroke-image soft-shadow"/></a>
+      <a className="anim-slide-up delay-16" href={imageLink} target="_blank"><img src={previewImage} className="w-100 mt-2 stroke-image soft-shadow"/></a>
       </section>
       </div>
     </>
