@@ -247,8 +247,8 @@ a:visited {
   height: 100%;
 }
 
-.stroke-image {
-  border-radius: 12px;
+.preview-image {
+  border-radius: 6px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -299,7 +299,7 @@ a:visited {
     text-align: left;
     color: #9d9d9d;
     text-transform: uppercase;
-    margin-bottom: 40px;
+    margin-bottom: 0;
   }
   .main-bg {
     width: 100%;
@@ -312,16 +312,21 @@ a:visited {
     width: 100%;
   }
   .subheader {
-    margin-top: 16px;
+    margin-top: 0px;
   }
   .subheader p {
     font-family: Manrope;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    line-height: 16px;
+    line-height: 22px;
     letter-spacing: 0em;
     text-align: left;
+    margin-top: 24px;
+    margin-bottom: 0;
+  }
+  .social-links {
+    margin-top: 24px;
   }
   a {
     color: #2493b6;
@@ -352,6 +357,17 @@ a:visited {
 }
 
 .soft-shadow {
+  -webkit-transition: .35s ease-in-out;
+  transition: .35s ease-in-out;
+  -webkit-transition-property: -webkit-box-shadow border-color;
+  transition-property: -webkit-box-shadow border-color;
+  transition-property: box-shadow border-color;
+  transition-property: box-shadow border-color, -webkit-box-shadow border-color;
+  border: 2px solid #F4F5F7;
+}
+
+.soft-shadow:hover {
+  border-color: #ffffff;
   -webkit-box-shadow: 0px 20px 35px 0px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 20px 35px 0px rgba(0, 0, 0, 0.1);
 }

@@ -19,15 +19,15 @@ const imageLink = "https://dribbble.com/shots/14723798-mindr-online-party-game-c
 function App() {
   return (
     <>
-      <nav className="navbar d-flex flex-column align-items-center justify-content-center">
+      {/* <nav className="navbar d-flex flex-column align-items-center justify-content-center">
         <span className="logo-name">Eduard Lotz</span>
         <span className="logo-sub">front-end {"&"} ui / ux design</span>
-      </nav>
+      </nav> */}
 
       <div className="main-bg">
           <div className="d-flex flex-md-row flex-column align-self-start justify-content-between section-header subheader">
               <div className="d-flex flex-column align-items-start justify-content-center subheader">
-                <h1 className="main-header anim-slide-up">Hey </h1>
+                <h1 className="main-header anim-slide-up">Hey 👋</h1>
                 <h1 className="main-header anim-slide-up delay-2">
                   I'm Eddie!
                 </h1>
@@ -83,9 +83,9 @@ function App() {
           </div>
         </section> */}
 
-<section className="d-flex flex-column">
+<section className="d-flex flex-column preview-section">
       <h2 className="align-self-start anim-slide-up delay-10">What i'm currently working on</h2>
-      <a className="anim-slide-up delay-16" href={imageLink} target="_blank"><img src={previewImage} className="w-100 mt-2 stroke-image soft-shadow"/></a>
+      <a className="anim-slide-up delay-16 w-100" href={imageLink} target="_blank"><img src={previewImage} className="w-100 mt-2 preview-image soft-shadow"/></a>
       </section>
       </div>
     </>
