@@ -6,7 +6,7 @@ import "./App.css";
 import portrait from "./assets/portrait.png";
 import dribbbleIcon from "./assets/dribbble.svg";
 import linkedinIcon from "./assets/linkedin.svg";
-import previewImage from "./assets/mindr-reveal-shot.jpg";
+import previewImage from "./assets/mindr-preview.jpg";
 import reactIcon from "./assets/reactlogo.svg";
 import reduxIcon from "./assets/reduxlogo.svg";
 import figmaIcon from "./assets/figmaicon.svg";
@@ -14,7 +14,7 @@ import sketchIcon from "./assets/sketchicon.svg";
 import sassIcon from "./assets/sassicon.svg";
 import SkillBlock from "./components/SkillBlock";
 
-const imageLink = "https://dribbble.com/shots/14723798-mindr-online-party-game-components";
+const imageLink = "https://mindrapp.de";
 
 function App() {
   return (
@@ -27,9 +27,9 @@ function App() {
       <div className="main-bg">
           <div className="d-flex flex-md-row flex-column align-self-start justify-content-between section-header subheader">
               <div className="d-flex flex-column align-items-start justify-content-center subheader">
-                <h1 className="main-header anim-slide-up">Hey 👋</h1>
+                <h1 className="main-header anim-slide-up">Hey</h1>
                 <h1 className="main-header anim-slide-up delay-2">
-                  I'm Eddie!
+                  My name is eddie.
                 </h1>
                 <p className="anim-slide-up delay-3">
                   Software Developer Apprentice{" "}
