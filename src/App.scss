@@ -65,11 +65,11 @@ section {
   p {
     font-family: "HK Grotesk", sans-serif;
   font-style: normal;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 18px;
-    text-align: left;
-    color: #7D7D7D;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: left;
+  color: #7D7D7D;
+  font-size: 18px;
   }
 }
 
@@ -213,7 +213,6 @@ a {
 
   .subheader p {
     font-family: "HK Grotesk", sans-serif;
-    font-size: 18px;
     font-style: normal;
     font-weight: 500;
     line-height: 22px;
@@ -221,6 +220,7 @@ a {
     text-align: left;
     margin-top: 16px;
     margin-bottom: 0;
+    font-size: 18px;
   }
 
   .social-links {
