@@ -1,15 +1,7 @@
 @import "./stylesheets/typography";
 @import "./stylesheets/animations";
 
-body {
-  margin: 0;
-  padding: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-family: "HK Grotesk", sans-serif;
-}
-
-h1 {
+h1  {
   color: #000000;
   font-family: "HK Grotesk", sans-serif !important;
   font-size: 56px;
@@ -235,7 +227,7 @@ a {
   h1 {
     color: #000000;
     font-family: "HK Grotesk", sans-serif !important;
-    font-size: 38px;
+    font-size: 34px;
     font-style: normal;
     font-weight: 800;
     line-height: 76px;
