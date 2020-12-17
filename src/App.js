@@ -83,6 +83,7 @@ function App() {
 <section className="d-flex flex-column preview-section">
       <h2 className="align-self-start anim-slide-up delay-10">What i'm currently working on</h2>
       <a className="anim-slide-up delay-16 w-100" href={imageLink} target="_blank"><img src={previewImage} className="w-100 mt-2 preview-image soft-shadow"/></a>
+      <p className="align-self-start anim-slide-up delay-16 mx-auto mt-3">Mindr is a mix of several party and casual games that you can play online with your friends.</p>
       </section>
       </div>
     </>

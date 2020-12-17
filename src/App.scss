@@ -1,7 +1,26 @@
 @import "./stylesheets/typography";
 @import "./stylesheets/animations";
 
-h1  {
+$scrollbar-bg: #ffffff;
+$thumb-bg: #d9d9d9;
+
+body::-webkit-scrollbar {
+  width: 11px;
+}
+body {
+  scrollbar-width: thin;
+  scrollbar-color: $thumb-bg $scrollbar-bg;
+}
+body::-webkit-scrollbar-track {
+  background: $scrollbar-bg;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: $thumb-bg ;
+  border-radius: 6px;
+  border: 3px solid $scrollbar-bg;
+}
+
+h1 {
   color: #000000;
   font-family: "HK Grotesk", sans-serif !important;
   font-size: 56px;
@@ -50,19 +69,18 @@ section {
   }
 }
 
-
 .subheader {
-  margin-top: 0px;
+  margin-top: 0px; 
+}
 
-  p {
-    font-family: "HK Grotesk", sans-serif;
+p {
+  font-family: "HK Grotesk", sans-serif;
   font-style: normal;
   font-weight: 500;
   line-height: 18px;
   text-align: left;
-  color: #7D7D7D;
+  color: #7d7d7d;
   font-size: 18px;
-  }
 }
 
 a {
@@ -138,7 +156,6 @@ a {
 }
 
 @media only screen and (max-width: 600px) {
-
   .section-header {
     padding-top: 40px;
   }
@@ -202,13 +219,12 @@ a {
     text-align: left;
     color: #000000;
   }
-  
 }
 
 .soft-shadow {
-  transition: .35s ease-in-out;
+  transition: 0.35s ease-in-out;
   transition-property: box-shadow border-color;
-  border: 2px solid #F4F5F7;
+  border: 2px solid #f4f5f7;
   &:hover {
     border-color: #ffffff;
     box-shadow: 0px 20px 35px 0px hsla(0, 0%, 0%, 0.1);
