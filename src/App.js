@@ -27,7 +27,7 @@ function App() {
       <div className="main-bg">
           <div className="d-flex flex-md-row flex-column align-self-start justify-content-between section-header subheader">
               <div className="d-flex flex-column align-items-start justify-content-center subheader">
-                <h1 className="main-header anim-slide-up">Hey, i'm Eddie.</h1>
+                <h1 className="main-header anim-slide-up">Hey, I'm Eddie.</h1>
                 <p className="anim-slide-up delay-3">
                   Software Developer Apprentice{" "}
                   <a
