@@ -26,7 +26,7 @@ function CleanHome() {
             <a
               href="https://www.active-value.de/"
               target="_blank"
-              cursor-class="arrow"
+              cursor-class="overlay"
             >
               @active-value
             </a>
@@ -36,7 +36,7 @@ function CleanHome() {
             <a
               href="https://www.whitespace.cc/"
               target="_blank"
-              cursor-class="arrow"
+              cursor-class="overlay"
             >
               @whitespace_
             </a>
@@ -98,7 +98,7 @@ function CleanHome() {
           What i'm currently working on
         </h2>
         <div className="anim-slide-up delay-16 w-100 image-container">
-          <a href={leftImageLink} target="_blank" cursor-class="open-link">
+          <a href={leftImageLink} target="_blank" cursor-class="arrow">
             <img
               src={previewImage}
               className="w-100 mt-2 preview-image hover-zoom"
