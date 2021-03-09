@@ -1,0 +1,210 @@
+@import "./animations";
+@import "./colors.scss";
+
+body::-webkit-scrollbar {
+  width: 11px;
+}
+body {
+  scrollbar-width: thin;
+  scrollbar-color: $thumb-bg $scrollbar-bg;
+}
+body::-webkit-scrollbar-track {
+  background: $scrollbar-bg;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: $thumb-bg;
+  border-radius: 6px;
+  border: 3px solid $scrollbar-bg;
+}
+
+h1 {
+  color: #000000;
+  font-family: "HK Grotesk", sans-serif !important;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 76px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 0;
+
+  &.main-header {
+    margin-bottom: 32px;
+  }
+}
+
+h2 {
+  font-family: "HK Grotesk", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 66px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #000000;
+}
+
+section {
+  margin: 64px 0;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.section-header {
+  padding-top: 40px;
+}
+
+.main-bg {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  padding: 0 16px;
+
+  @media screen and (min-width: 1200px) {
+    margin: 0 auto;
+    width: 1200px;
+  }
+}
+
+.header-text {
+  .header-image {
+    width: 50%;
+  }
+}
+
+.subheader {
+  margin-top: 0px;
+  order: 2;
+}
+
+p {
+  font-family: "HK Grotesk", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: left;
+  color: #7d7d7d;
+  font-size: 18px;
+}
+
+a {
+  color: #2493b6;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+    border: none;
+  }
+
+  &:visited {
+    color: #2493b6;
+    text-decoration: none;
+  }
+}
+
+.skills-row {
+  span {
+    margin-top: 16px;
+    font-family: "HK Grotesk", sans-serif;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #383838;
+  }
+
+  &.col {
+    padding: 0;
+  }
+
+  &.low {
+    margin-top: 80px;
+  }
+
+  &.low .col-3 {
+    padding: 0;
+  }
+}
+
+.social-links {
+  margin: 24 0;
+  order: 2;
+  a svg {
+    color: #000000;
+  }
+
+  a:hover svg {
+    color: #dedede;
+  }
+}
+.portrait-container {
+  border-radius: 50%;
+  background-color: #f8f8f8;
+  cursor: grab;
+  margin: 0 auto 24px auto;
+  order: 1;
+  @media screen and (min-width: 800px) {
+    margin: 0;
+    order: 5;
+  }
+
+  .portrait-image {
+    width: auto;
+    height: 100%;
+    transform: rotate(15deg);
+    clip-path: circle(50% at 50% 50%);
+    pointer-events: none;
+  }
+}
+
+//image container with split effect for two images/links
+.image-container {
+  border-radius: 8px;
+  position: relative;
+  min-height: 460px;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+    transform-origin: center;
+    transition: 0.6s cubic-bezier(0, 0.55, 0.45, 1);
+    transition-property: clip-path filter;
+  }
+  
+  a:first-child img {
+    clip-path: polygon(20% 100%, 0 100%, 0 0, 100% 0);
+  }
+
+  a:first-child:hover {
+    & ~ a img {
+    clip-path: polygon(90% 0, 100% 0, 100% 100%, 50% 100%);
+    }
+  }
+
+  a:last-child img {
+    clip-path: polygon(70% 0, 100% 0, 100% 100%, 0 100%);
+
+    &:hover {
+      clip-path: polygon(40% 0, 100% 0, 100% 100%, 0 100%);
+    }
+  }
+}
+
+.soft-shadow {
+  transition: 0.35s ease-in-out;
+  transition-property: box-shadow border-color;
+  border: 2px solid #f4f5f7;
+  &:hover {
+    border-color: transparent;
+    box-shadow: 0px 20px 35px 0px #7e7d7d1a;
+  }
+}

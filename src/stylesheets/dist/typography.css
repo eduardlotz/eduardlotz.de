@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap");
+.front-header {
+  font-family: Butler;
+  font-size: 16rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 300px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #343442;
+  white-space: nowrap;
+}
+
+h2.header-subtext {
+  font-family: Inter;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 8px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #343442;
+  z-index: 100;
+}
+h2.header-subtext:first-child {
+  margin-bottom: 24px;
+}
+h2.header-subtext a {
+  font-weight: 700;
+  color: #343442;
+}
+
+.landing-link-container a {
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: #343442;
+  text-transform: uppercase;
+  transition: letter-spacing 0.2s ease;
+}
+.landing-link-container a:hover:not(.link-disabled) {
+  letter-spacing: 14px;
+  text-decoration: none;
+  -webkit-animation: jello-horizontal 0.9s both;
+  animation: jello-horizontal 0.9s both;
+}
+.landing-link-container a.link-disabled {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
