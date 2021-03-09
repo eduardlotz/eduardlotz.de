@@ -42,37 +42,34 @@ function CleanHome() {
             </a>
           </p>
 
-          <div className="d-flex align-items-end social-links anim-slide-up delay-6">
+          <div className="social-links anim-slide-up delay-6">
             <a
-              className="mr-3"
               href="https://www.linkedin.com/in/eduardlotz/"
               target="_blank"
               cursor-class="overlay"
             >
-              <img src={linkedinIcon} />
+              <i className="icon-linkedin"></i>
             </a>
             <a
-              className="mr-3"
               href="https://dribbble.com/eduardlotz"
               target="_blank"
               cursor-class="overlay"
             >
-              <img src={dribbbleIcon} />
-            </a>
-            <a
-              className="mr-3"
-              href="https://open.spotify.com/user/captainlowie?si=Sedo1rrzSrKslLgb0b3HMA"
-              target="_blank"
-              cursor-class="overlay"
-            >
-              <img src={spotifyIcon} />
+              <i className="icon-dribbble"></i>
             </a>
             <a
               href="https://github.com/eduardlotz"
               target="_blank"
               cursor-class="overlay"
             >
-              <img src={gitHubIcon} />
+              <i className="icon-github"></i>
+            </a>
+            <a
+              href="https://open.spotify.com/user/captainlowie?si=Sedo1rrzSrKslLgb0b3HMA"
+              target="_blank"
+              cursor-class="overlay"
+            >
+              <i className="icon-spotify"></i>
             </a>
           </div>
         </div>
@@ -92,10 +89,7 @@ function CleanHome() {
             default: { duration: 0.6 },
           }}
         >
-          <img
-            src={portrait}
-            className="portrait-image "
-          />
+          <img src={portrait} className="portrait-image " />
         </motion.div>
       </div>
 
@@ -105,7 +99,10 @@ function CleanHome() {
         </h2>
         <div className="anim-slide-up delay-16 w-100 image-container">
           <a href={leftImageLink} target="_blank" cursor-class="open-link">
-            <img src={previewImage} className="w-100 mt-2 preview-image hover-zoom" />
+            <img
+              src={previewImage}
+              className="w-100 mt-2 preview-image hover-zoom"
+            />
           </a>
           <a href={rightImageLink} target="_blank" cursor-class="open-link">
             <img
