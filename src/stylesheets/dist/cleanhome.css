@@ -262,12 +262,15 @@ a:visited {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  border: 2px solid #f4f5f7;
+  border-radius: 8px;
   order: 2;
 }
 @media screen and (min-width: 800px) {
   .social-links {
     width: auto;
     padding: 24px 0;
+    border-color: transparent;
   }
 }
 .social-links a:not(.social-links a:last-child) {
