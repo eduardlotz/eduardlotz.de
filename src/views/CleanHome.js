@@ -16,6 +16,25 @@ import personalPageTeaser from "../assets/personal-page-teaser.jpg";
 const leftImageLink = "https://mindrapp.de";
 const rightImageLink = "https://dribbble.com/shots/15218369-Personal-Page-2021";
 function CleanHome() {
+  
+  const variants = {
+    visible: i => ({
+      opacity: 1,
+      transition: {
+        delay: i * 0.3,
+      },
+    }),
+    hidden: { opacity: 0 },
+  }
+  
+  // return items.map((item, i) => (
+  //   <motion.li
+  //     custom={i}
+  //     animate="visible"
+  //     variants={variants}
+  //   />
+  // ))
+
   return (
     <div className="main-bg">
       <div className="d-flex flex-md-row flex-column align-self-start justify-content-between section-header subheader">
@@ -101,13 +120,13 @@ function CleanHome() {
           <a href={leftImageLink} target="_blank" cursor-class="arrow">
             <img
               src={previewImage}
-              className="w-100 mt-2 preview-image hover-zoom"
+              className="preview-image hover-zoom"
             />
           </a>
           <a href={rightImageLink} target="_blank" cursor-class="open-link">
             <img
               src={personalPageTeaser}
-              className="w-100 mt-2 preview-image hover-zoom"
+              className="preview-image hover-zoom"
             />
           </a>
         </div>

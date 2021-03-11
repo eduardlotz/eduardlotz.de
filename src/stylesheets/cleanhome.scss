@@ -178,6 +178,7 @@ a {
 }
 .portrait-container {
   border-radius: 50%;
+  border: 2px solid #222;
   background-color: #f8f8f8;
   cursor: grab;
   margin: 0 auto 24px auto;
@@ -188,8 +189,10 @@ a {
   }
 
   .portrait-image {
+    margin-bottom: -6px;
     width: auto;
     height: 100%;
+    object-fit: cover;
     transform: rotate(15deg);
     clip-path: circle(50% at 50% 50%);
     pointer-events: none;
@@ -201,34 +204,103 @@ a {
   border-radius: 8px;
   position: relative;
   min-height: 460px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: none;
 
   img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: auto;
+    position: relative;
     width: 100%;
-    object-fit: cover;
-    transform-origin: center;
-    transition: 0.6s cubic-bezier(0, 0.55, 0.45, 1);
-    transition-property: clip-path filter;
+    height: 420px;
+    margin: 32px 0;
+    border-radius: 8px;
+
+    transition: none;
+    transform: scale(1);
+
+    border: 2px solid #222;
   }
 
-  a:first-child img {
-    clip-path: polygon(20% 100%, 0 100%, 0 0, 100% 0);
+  a:hover img {
+    transform: none;
   }
 
-  a:first-child:hover {
-    & ~ a img {
-      clip-path: polygon(90% 0, 100% 0, 100% 100%, 50% 100%);
+  @media screen and (min-width: 1080px) {
+    flex-direction: row;
+    box-shadow: 0 0 0px 2px #222222;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      height: 100%;
+      margin: 0;
+      border: none;
+      object-fit: cover;
+
+      transform-origin: center;
+      transition: 0.6s cubic-bezier(0, 0.55, 0.45, 1);
+      transition-property: clip-path filter scale;
     }
-  }
 
-  a:last-child img {
-    clip-path: polygon(70% 0, 100% 0, 100% 100%, 0 100%);
+    @media not all and (min-resolution: 0.001dpcm) {
+      @supports (-webkit-appearance: none) {
+        a {
+          width: 50%;
+        }
 
-    &:hover {
-      clip-path: polygon(40% 0, 100% 0, 100% 100%, 0 100%);
+        img {
+          position: relative;
+          height: 100%;
+          min-height: 100vh;
+          width: 100%;
+          object-fit: cover;
+          transform-origin: center;
+          border-radius: 0;
+
+          transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+          transform: scale(1.05);
+        }
+
+        a:first-child img {
+          clip-path: none !important;
+        }
+
+        a:first-child:hover {
+          & ~ a img {
+            clip-path: none !important;
+          }
+        }
+
+        a:last-child img {
+          clip-path: none !important;
+
+          &:hover {
+            clip-path: none !important;
+          }
+        }
+      }
+    }
+
+    a:first-child img {
+      clip-path: polygon(20% 100%, 0 100%, 0 0, 100% 0);
+    }
+
+    a:first-child:hover {
+      & ~ a img {
+        clip-path: polygon(90% 0, 100% 0, 100% 100%, 50% 100%);
+      }
+    }
+
+    a:last-child img {
+      clip-path: polygon(70% 0, 100% 0, 100% 100%, 0 100%);
+
+      &:hover {
+        clip-path: polygon(40% 0, 100% 0, 100% 100%, 0 100%);
+      }
     }
   }
 }
