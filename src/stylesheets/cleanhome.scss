@@ -286,12 +286,12 @@ a {
     }
 
     a:first-child img {
-      clip-path: polygon(20% 100%, 0 100%, 0 0, 100% 0);
+      clip-path: polygon(80% 100%, 0 100%, 0 0, 100% 0);
     }
 
     a:first-child:hover {
       & ~ a img {
-        clip-path: polygon(90% 0, 100% 0, 100% 100%, 50% 100%);
+        clip-path: polygon(90% 0, 100% 0, 100% 100%, 80% 100%);
       }
     }
 

@@ -393,10 +393,10 @@ a:visited {
     }
   }
   .image-container a:first-child img {
-    clip-path: polygon(20% 100%, 0 100%, 0 0, 100% 0);
+    clip-path: polygon(80% 100%, 0 100%, 0 0, 100% 0);
   }
   .image-container a:first-child:hover ~ a img {
-    clip-path: polygon(90% 0, 100% 0, 100% 100%, 50% 100%);
+    clip-path: polygon(90% 0, 100% 0, 100% 100%, 80% 100%);
   }
   .image-container a:last-child img {
     clip-path: polygon(70% 0, 100% 0, 100% 100%, 0 100%);
